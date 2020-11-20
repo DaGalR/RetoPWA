@@ -20,7 +20,7 @@ const Marvel = () => {
         setMsj("No hay conexión");
       } else {
         setMsj("Personajes de Marvel");
-        setPsjs(localStorage.getItem("personajes"));
+        setPsjs(JSON.parse(localStorage.getItem("personajes")));
       }
     } else {
       let ts = Date.now();
